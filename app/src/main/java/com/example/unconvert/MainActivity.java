@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(MainActivity.this, "This button is working", Toast.LENGTH_SHORT).show();
 
         String userNum = editText.getText().toString();
-        int kg = Integer.parseInt(userNum);
+        double kg = Double.parseDouble(userNum);
         double pound = kg * 2.205;
         textView.setText(userNum + "kg = " + String.format("%.2f", pound) + "lbs");
     }
